@@ -11,6 +11,8 @@
 		4485E6F72B7A40470078E16A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4485E6F62B7A40470078E16A /* ContentView.swift */; };
 		4485E6F92B7A404A0078E16A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4485E6F82B7A404A0078E16A /* Assets.xcassets */; };
 		4485E6FC2B7A404A0078E16A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4485E6FB2B7A404A0078E16A /* Preview Assets.xcassets */; };
+		44E2132B2B7A91D5008E290A /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E2132A2B7A91D5008E290A /* ColorUtils.swift */; };
+		44E2132D2B7A9228008E290A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E2132C2B7A9228008E290A /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		4485E6F62B7A40470078E16A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4485E6F82B7A404A0078E16A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4485E6FB2B7A404A0078E16A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44E2132A2B7A91D5008E290A /* ColorUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		44E2132C2B7A9228008E290A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				4485E6F62B7A40470078E16A /* ContentView.swift */,
 				4485E6F82B7A404A0078E16A /* Assets.xcassets */,
 				4485E6FA2B7A404A0078E16A /* Preview Content */,
+				44E2132A2B7A91D5008E290A /* ColorUtils.swift */,
+				44E2132C2B7A9228008E290A /* LocationManager.swift */,
 			);
 			path = SpeedmeterCry;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44E2132D2B7A9228008E290A /* LocationManager.swift in Sources */,
+				44E2132B2B7A91D5008E290A /* ColorUtils.swift in Sources */,
 				4485E6F72B7A40470078E16A /* ContentView.swift in Sources */,
 				4485E6F52B7A40470078E16A /* SpeedmeterCryApp.swift in Sources */,
 			);
@@ -275,6 +283,8 @@
 				DEVELOPMENT_TEAM = XT33RCZNU9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location Key";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location Key";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +314,8 @@
 				DEVELOPMENT_TEAM = XT33RCZNU9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Location Key";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location Key";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
