@@ -20,6 +20,10 @@ class LocationManager: NSObject, ObservableObject {
     @Published var speed: String = "?" {
         willSet { objectWillChange.send() }
     }
+  //KmSpeed add
+    @Published var KmSpeed: String = "?" {
+        willSet { objectWillChange.send() }
+    }
     
     @Published var speedColor: Color = .purple {
         willSet { objectWillChange.send() }
@@ -48,6 +52,9 @@ extension LocationManager: CLLocationManagerDelegate {
         if (location.speedAccuracy >= 0) {
             let s: Double = 2.23694 * location.speed
             self.speed = String(format: "%.0f", s)
+          //KmSpeed add ( * 1.609 )
+          let KmS: Double = 2.23694 * location.speed * 1.609
+            self.KmSpeed = String(format: "%.0f", KmS)
             self.speedColor = interpolate(color1: green,
                                           color2: red,
                                           fraction: s / 100)
