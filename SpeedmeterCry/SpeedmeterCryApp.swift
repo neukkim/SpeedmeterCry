@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct SpeedmeterCryApp: App {
+//    var tTSManager = TTSManager()
+//  tTSManager.play("퇴근시켜주세요")
+//  tTSManager.stop()
+  
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+
+
+
+
